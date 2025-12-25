@@ -1,0 +1,165 @@
+@media (max-width: 480px) {
+  .navbar {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 2px;
+    padding: 3px;
+  }
+  .nav-center {
+    display: none !important;
+  }
+
+  /* Banner */
+  .banner {
+    height: 200px;
+  }
+
+  .banner-text h1 {
+    font-size: 20px;
+  }
+
+  /* INFO SECTION */
+
+  .info-content {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    align-content: left;
+  }
+  .info {
+    padding: 20px 10px;
+  }
+
+  .info-content {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .info-left,
+  .info-right {
+    width: 100% !important;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+
+  .info-left h2,
+  .info-right h2 {
+    font-size: 16px;
+  }
+
+  /* PROFILE */
+  .profile {
+    padding: 24px;
+  }
+
+  .profile-grid {
+    display: block;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .profile-item {
+    margin-bottom: 16px;
+    height: auto;
+    padding: 18px;
+  }
+
+  .hobbies {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* CHỨNG CHỈ */
+  .cert-grid {
+    display: block; /* Trở lại dạng 1 cột */
+    padding: 0;
+  }
+
+  .cert {
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    text-align: center !important;
+  }
+
+  /* Loại bỏ border dọc */
+  .cert-grid .cert {
+    border-left: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-bottom: 1px dashed #ddd;
+  }
+
+  .cert-grid .cert:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .cert img {
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .cert p {
+    text-align: center !important;
+  }
+
+  /* PROJECTS */
+  .project-grid {
+    display: block;
+  }
+
+  .project {
+    padding: 30px 10px;
+  }
+  .project-card {
+    width: 100%;
+    padding: 0 0 20px 0;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .project-card h3,
+  .project-card p,
+  .project-card .project-info {
+    padding: 0 15px;
+  }
+
+  /* Footer */
+  .footer a {
+    display: block;
+    margin: 6px 0;
+  }
+  .hide {
+    display: none !important;
+  }
+}

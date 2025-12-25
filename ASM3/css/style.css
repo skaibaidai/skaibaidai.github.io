@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* ===== Banner ===== */
+.banner {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.banner-text p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  background-color: #f0f0f0;
+  padding: 10px 40px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.nav-center {
+  text-align: center;
+  position: relative;
+}
+
+.nav-center .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  position: absolute;
+  top: -48px;
+  left: 2%;
+  background-color: #fff;
+}
+.nav-center h3 {
+  margin-top: 60px;
+  font-size: 18px;
+  color: #000;
+  left: -20px;
+}
+
+.nav-center p {
+  font-size: 13px;
+  color: #666;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: #199cdb;
+}
+.navbar i {
+  color: #199cdb;
+}
+.nav-center {
+  text-align: center;
+}
+
+/* ===== Info Section ===== */
+.info {
+  padding: 40px 120px;
+}
+
+.info-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.info-left {
+  grid-column: 1 / 2;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.email-form-container,
+.info-details {
+  grid-column: 2 / 3;
+  align-self: start;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.info i {
+  color: #199cdb;
+}
+
+.info h2 {
+  margin-bottom: 15px;
+}
+
+.info-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-details li {
+  margin-bottom: 6px;
+}
+
+.info-details .social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Profile */
+.profile {
+  padding: 60px 120px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.profile-item {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 25px;
+  height: 300px;
+}
+
+.profile-item h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.profile-item h3 i {
+  font-size: 30px;
+}
+
+.item p {
+  margin-top: 5px;
+}
+
+.profile-item h3 span {
+  flex: 3;
+}
+
+.profile-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.profile-item ul li::before {
+  content: "- ";
+  color: #333;
+}
+.sub-info {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+/* Sở thích */
+.hobbies {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+.hobby {
+  flex: 1;
+  text-align: center;
+}
+
+.hobby i {
+  border: 2px solid #199cdb;
+  border-radius: 50%;
+  padding: 10px;
+  color: #199cdb;
+  font-size: 18px;
+  position: relative;
+  top: 20px;
+}
+
+.hobby p {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+/* Skill levels */
+.skill p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.level {
+  display: inline-block;
+  width: 45px;
+  height: 4px;
+  background: #ccc;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.level.active {
+  background: #199cdb;
+}
+
+/* ===== Certificates ===== */
+.certificate {
+  padding: 60px 120px;
+  border-bottom: 2px solid #d6c08d;
+  margin-bottom: 40px;
+}
+
+.certificate h2 {
+  /* color: #199cdb; */
+  font-size: 22px;
+  margin-bottom: 25px;
+  /* text-transform: uppercase; */
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.cert {
+  border: none;
+  background: #fffef6;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.cert img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ===== Projects ===== */
+.project {
+  padding: 60px 120px;
+  border-top: 1px solid #ccc;
+}
+
+.project h2 {
+  /* color: #199cdb; */
+  margin-bottom: 25px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  /* color: #199cdb; */
+  font-size: 18px;
+  margin: 10px 15px;
+}
+
+.project-card p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+}
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.project-info .year {
+  background-color: #199cdb;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.project-info i {
+  margin-right: 4px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #199cdb;
+}
+
+.footer i {
+  margin-right: 6px;
+}
+.hide {
+  display: none !important;
+}
+
+.email-form-container {
+  background: #fafafa;
+  padding: 60px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.email-form-container h2 {
+  color: #199cdb;
+  font-size: 22px;
+}
+.hide {
+  display: none !important;
+}
+.toggle-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  background: #199cdb;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.toggle-btn:hover {
+  background: #127aa8;
+}
+
+/* Hiệu ứng hover vào title */
+.toggle-title {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-title:hover {
+  color: #199cdb;
+}
+.profile-item .toggle-btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.profile-item:hover .toggle-btn {
+  opacity: 1;
+  pointer-events: auto;
+}

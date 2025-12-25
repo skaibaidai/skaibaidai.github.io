@@ -1,0 +1,53 @@
+@media (max-width: 992px) {
+  .nav-center {
+    display: none;
+  }
+  .info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .profile {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-item {
+    height: auto;
+  }
+  .cert img {
+    height: 140px;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner-text h1 {
+    font-size: 30px;
+  }
+
+  .certificate {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .cert-grid {
+    gap: 20px;
+  }
+
+  .cert-grid .cert:nth-child(2) {
+    border-left: 1px solid #ccc;
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+
+  .cert-grid .cert:nth-child(1) {
+    padding-right: 25px;
+  }
+
+  .cert img {
+    height: 120px;
+  }
+}
